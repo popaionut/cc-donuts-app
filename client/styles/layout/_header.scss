@@ -1,0 +1,47 @@
+.cc-header{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: $headerHeight;
+  background: $primaryColor;
+  font-size: 1.6rem;
+}
+
+.cc-header-logo{
+  color: #ffffff;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.cc-menu{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.cc-menu-item a{
+  display: block;
+  padding: 16px;
+  text-align: center;
+
+  &:hover{
+    background-color: $primaryColorDarken;
+  }
+}
+
+.cc-menu-item-selected{
+  background-color: $primaryColorDarken;;
+}
+
+@media all and (max-width: 350px) {
+
+  .cc-header{
+    position: static;
+  }
+
+  .cc-main, .cc-main-donuts{
+    margin-top: 0;
+  }
+}

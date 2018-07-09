@@ -1,0 +1,66 @@
+.cc-user-main{
+  align-items: center;
+}
+
+form.cc-user-form{
+  display: flex;
+  flex-flow: column;
+  padding:40px;
+  width:300px;
+  border-radius: 5px;
+}
+
+.cc-user-form-input{
+  display: flex;
+  margin-top: 15px;
+}
+
+.cc-user-form-input > input{
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  color:#535252;
+  outline: none;
+  border:none;
+}
+
+.cc-action-buttons{
+  position: relative;
+  margin-top: 15px;
+}
+
+.cc-user-form-button{
+  padding: 10px 12px;
+  border-radius: 5px;
+  color:#fff;
+  outline: none;
+  border:none;
+
+  &:hover{
+    cursor: pointer;
+    transition: 500ms;
+  }
+}
+
+#cc-forgot-password{
+  background-color: $forgotPasswordColor;
+  text-align: left;
+  width: 100%;
+
+  &:hover{
+    background-color: $forgotPasswordColorDarken;
+  }
+}
+
+.cc-user-form-button-submit{
+  background-color: $userSubmitButtonColor;
+
+  &:hover{
+    background-color: $userSubmitButtonColorDarken;
+  }
+}
+
+.cc-user-register-button{
+  margin-top: 15px;
+}

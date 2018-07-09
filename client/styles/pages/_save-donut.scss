@@ -1,0 +1,129 @@
+.cc-save-donut-form {
+  width: 265px;
+  min-width: 200px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #440e62;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.cc-create-donut-title {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.cc-create-donut-subtitle {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cc-select-donut-label {
+  padding-left: 35px;
+}
+
+.cc-donut-types {
+  margin: 20px 0 30px;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+      height: 80px;
+    }
+  }
+
+  input[id*=cc-donut-type-1], input[id*=cc-donut-type-2], input[id*=cc-donut-type-3] {
+    display: none;
+
+    &:checked + label {
+      border: 3px solid #f26d7d;
+    }
+  }
+
+  label[for*=cc-donut-type-1] {
+    background: url('assets/img/donut-types/donut-types-sprite.png') 0 0 no-repeat;
+  }
+
+  label[for*=cc-donut-type-2] {
+    background: url('assets/img/donut-types/donut-types-sprite.png') 0 -141px no-repeat;
+  }
+
+  label[for*=cc-donut-type-3] {
+    background: url('assets/img/donut-types/donut-types-sprite.png') 0 -282px no-repeat;
+  }
+
+  label[for*=cc-donut-type-1], label[for*=cc-donut-type-2], label[for*=cc-donut-type-3] {
+    background-size: 100%;
+    padding: 0 0 65px 85px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+}
+
+.cc-is-comestible {
+  margin-bottom: 25px;
+
+  > div {
+    display: flex;
+    padding-left: 35px;
+    margin-top: 15px;
+
+    div:first-child {
+      flex: 1;
+    }
+
+    div:last-child {
+      flex: 2;
+    }
+  }
+
+  input[type=radio] {
+    display: none;
+
+    &:checked + label {
+      color: #ffffff;
+
+      &:before {
+        content: '\f058';
+        color: green;
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+    color: #bd8cbf;
+  }
+
+  label:before {
+    content: '\f10c';
+    font-family: FontAwesome;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 1.8rem;
+    padding-right: 10px;
+  }
+}
+
+.cc-is-comestible-label {
+  padding-left: 35px;
+}
+
+.cc-save-donut-input {
+  display: flex;
+  margin-top: 15px;
+
+  > input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+  }
+}

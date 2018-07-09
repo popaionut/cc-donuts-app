@@ -1,0 +1,12 @@
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  color: $primaryColor;
+  width: 100%;
+  height: $footerHeight;
+}
+
+footer span{
+  padding-top: 15px;
+}
